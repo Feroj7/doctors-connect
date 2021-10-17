@@ -1,0 +1,26 @@
+.banner-area{
+    background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://templates.envytheme.com/mediva/default/assets/img/main-banner/banner-bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:700px;
+    margin-top:20px;
+}
+.text-area{
+    padding-top:300px;
+    color:#FFFFFF;
+}
+.input-area{
+    background-color: #DDE3E8;
+    padding: 20px;
+    width:600px;
+    margin:auto;
+    border-radius:10px;
+}
+
+@media screen and (max-width: 400px) {
+    .input-area{
+        flex-direction: column;
+        width:100%;
+    }
+}

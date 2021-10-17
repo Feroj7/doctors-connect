@@ -1,0 +1,10 @@
+.doctor-card{
+    height:750px;
+}
+.img-area{
+    width: 400px;
+    transition: width 3s;
+}
+.img-area:hover{
+    width: 500px;
+}
