@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Doctors.css';
 
 const Doctors = () => {
@@ -18,21 +19,23 @@ const Doctors = () => {
                 <h1>Our Specialized Doctors</h1>
                 <Row className="g-4 mt-5">
                     {
-                        doctors.map(doctor => 
+                        doctors.map(doctor =>
                             <Col key={doctor?.id} lg={4}>
-                               <div className="doctor-card border">
-                               <div>
-                                    <img className="img-fluid mb-3 img-area" src={doctor?.img} alt="" />
+                                <div className="doctor-card border">
+                                    <div>
+                                        <img className="img-fluid mb-3 img-area" src={doctor?.img} alt="" />
+                                    </div>
+                                    <h3>{doctor?.name}</h3>
+                                    <p>{doctor?.degree}</p>
+                                    <p className="text-primary">{doctor?.expertise}</p>
+                                    <h5>৳ {doctor?.visit}</h5>
+                                    <Link to={`/doctordetail/${doctor.id}`}>
+                                        <Button variant="primary">View Details</Button>
+                                    </Link>
                                 </div>
-                                <h3>{doctor?.name}</h3>
-                                <p>{doctor?.degree}</p>
-                                <p className="text-primary">{doctor?.expertise}</p>
-                                <h5>৳ {doctor?.visit}</h5>
-                                <Button variant="primary">View Details</Button>
-                               </div>
                             </Col>
-                            
-                            )
+
+                        )
                     }
                 </Row>
             </Container>

@@ -1,0 +1,17 @@
+.login-form{
+    margin-top:120px;
+}
+.login-form input{
+    border:none;
+    outline:none;
+    border-bottom: 1px solid gray;
+}
+
+@media screen and (max-width: 400px) {
+    .login-form{
+        margin-top:0px;
+    }
+    .log-form input{
+        width:100% !important;
+    }
+}

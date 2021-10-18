@@ -1,5 +1,14 @@
 .menu-item a{
     text-decoration:none;
     color:white;
-    margin-right: 25px;
+}
+
+@media screen and (max-width: 400px){
+    .logout-btn{
+        width:80px;
+        margin:auto;
+    }
+    .menu-item a{
+        margin-right:0 !important;
+    }
 }

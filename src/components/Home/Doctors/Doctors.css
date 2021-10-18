@@ -3,7 +3,7 @@
 }
 .img-area{
     width: 400px;
-    transition: width 3s;
+    transition: width 2s;
 }
 .img-area:hover{
     width: 500px;
