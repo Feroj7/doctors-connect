@@ -11,6 +11,8 @@ import DoctorsDetail from './components/DoctorsDetail.js/DoctorsDetail';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Footer from './components/Shared/Footer/Footer';
 import BookAppointment from './components/BookAppointment/BookAppointment';
+import Contact from './components/Contact/Contact';
+import About from './components/About/About';
 
 function App() {
   return (
@@ -24,6 +26,12 @@ function App() {
           </Route>
           <Route exact path="/home">
             <Home></Home>
+          </Route>
+          <Route exact path="/about">
+            <About></About>
+          </Route>
+          <Route exact path="/contact">
+            <Contact></Contact>
           </Route>
           <PrivateRoute exact path="/doctordetail/:doctorId">
             <DoctorsDetail></DoctorsDetail>

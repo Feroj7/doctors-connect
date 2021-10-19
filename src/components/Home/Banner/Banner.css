@@ -7,8 +7,11 @@
     margin-top:20px;
 }
 .text-area{
-    padding-top:300px;
+    padding-top:280px;
     color:#FFFFFF;
+}
+.title{
+    font-size:48px;
 }
 .input-area{
     background-color: #DDE3E8;
@@ -18,9 +21,12 @@
     border-radius:10px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .input-area{
         flex-direction: column;
         width:100%;
+    }
+    .title{
+        font-size:30px;
     }
 }

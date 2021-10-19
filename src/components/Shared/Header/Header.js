@@ -28,10 +28,15 @@ const Header = () => {
                             <NavLink activeStyle={activeStyle} to="/bookappointment" className="me-5">Book an Appointment</NavLink>
                         </Nav>
                         <Nav>
+                             <div className="me-2 signup-btn">
+                             <Link to="/signup">
+                                <Button variant="warning">Sign Up</Button>
+                            </Link>
+                             </div>
                             {user.email ?
                                 (<Button onClick={logOut} variant="warning" className="logout-btn">Logout</Button>)
                                 :
-                                (<NavLink to="/login"><Button variant="warning" className="me-5">Login</Button></NavLink>)
+                                (<NavLink to="/login"><Button variant="warning">Login</Button></NavLink>)
                             }
                             <div className="pt-2">
                                 <span className="text-white ms-2">{user?.displayName}</span>

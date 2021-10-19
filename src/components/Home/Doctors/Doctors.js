@@ -28,7 +28,7 @@ const Doctors = () => {
                                     <h3>{doctor?.name}</h3>
                                     <p>{doctor?.degree}</p>
                                     <p className="text-primary">{doctor?.expertise}</p>
-                                    <h5>৳ {doctor?.visit}</h5>
+                                    <h5>{doctor?.visit}</h5>
                                     <Link to={`/doctordetail/${doctor.id}`}>
                                         <Button variant="primary">View Details</Button>
                                     </Link>

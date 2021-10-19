@@ -17,31 +17,31 @@ const Footer = () => {
                         <i className="fab fa-google icon-style"></i>
                     </Col>
                     <Col className="mb-3">
-                     <h3 className="mb-3">Departments</h3>
-                     <p>Ear, Nose & Throat Specialist</p>
-                     <p>Cancer Specialist</p>
-                     <p>Child Specialist</p>
-                     <p>Cardiologist</p>
-                     <p>Pediatric & Neonatology Specialist</p>
+                        <h3 className="mb-3">Departments</h3>
+                        <p>Ear, Nose & Throat Specialist</p>
+                        <p>Cancer Specialist</p>
+                        <p>Child Specialist</p>
+                        <p>Cardiologist</p>
+                        <p>Pediatric & Neonatology Specialist</p>
                     </Col>
                     <Col>
                         <h3 className="mb-3">Get In Touch</h3>
-                               <div>
-                                    <i className="fas fa-phone-alt"></i>
-                                    <h5>Phone</h5>
-                                    <p>01234567890</p>
-                               </div>
-                                <div>
-                                    <i className="far fa-envelope"></i>
-                                    <h5>Email</h5>
-                                    <p>contact@doctor-connect.com</p>
-                                </div>
-                                <div>
-                                    <i className="fas fa-map-marker-alt"></i>
-                                    <h5>Address</h5>
-                                    <p>North Tower, Uttara</p>
-                                </div>
-                     </Col>
+                        <div>
+                            <i className="fas fa-phone-alt"></i>
+                            <h5>Phone</h5>
+                            <p>01234567890</p>
+                        </div>
+                        <div>
+                            <i className="far fa-envelope"></i>
+                            <h5>Email</h5>
+                            <p>contact@doctor-connect.com</p>
+                        </div>
+                        <div>
+                            <i className="fas fa-map-marker-alt"></i>
+                            <h5>Address</h5>
+                            <p>North Tower, Uttara</p>
+                        </div>
+                    </Col>
                 </Row>
                 <span>Copyrigh &copy; 2021 || All Rights Reserved By Doctors Connect</span>
             </Container>

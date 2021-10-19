@@ -1,0 +1,24 @@
+.about-bg-img{
+    background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://templates.envytheme.com/mediva/default/assets/img/page-banner/page-banner-1.jpg);
+    height:300px;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-top:100px;
+}
+ul li{
+    list-style: none;
+    font-size:20px;
+}
+.stat{
+    background-color: #0D6EFD;
+    color:white;
+}
+@media screen and (max-width: 600px) {
+    .stat{
+        flex-direction: column;
+    }
+    .about-img{
+        margin-bottom:20px;
+    }
+}

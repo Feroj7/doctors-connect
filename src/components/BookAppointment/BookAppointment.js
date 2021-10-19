@@ -1,16 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Form, Row, Col, Button } from 'react-bootstrap';
 import './BookAppointment.css';
 
 const BookAppointment = () => {
+
+    const [doctorName, setDoctorName] = useState("");
+    const [visit, setVisit] = useState("");
+    const [date, setDate] = useState("");
+    const [time, setTime] = useState("");
+    
+    const handleDoctorNameChange = e => {
+        setDoctorName(e.target.value)
+    }
+
+    const handleVisitChange = e => {
+        setVisit(e.target.value)
+    }
+    
+    const handleTimeChange = e => {
+        setTime(e.target.value)
+    }
+   
+    const handleDateChange = e =>{
+        setDate(e.target.value)
+    }
+
+    const handleFormSubmit = e => {
+        e.preventDefault()
+    }
+
     return (
         <div className="mt-5 pt-5">
             <Container>
                 <Row>
-                    <Col lg={8}>
+                    <Col lg={8} className="p-5">
                         <h3 className="text-start">Book Appointment</h3>
                         <hr />
-                        <Form className="text-start">
+                        <Form className="text-start" onSubmit={handleFormSubmit}>
                             <Row className="mb-3">
                                 <Form.Group as={Col} controlId="formGridEmail">
                                     <Form.Label>Your Name</Form.Label>
@@ -40,7 +66,8 @@ const BookAppointment = () => {
                                 </Form.Group>
                             </Row>
 
-                            <Form.Group as={Col} controlId="formGridState" className="mb-3">
+                           <Row>
+                           <Form.Group as={Col} controlId="formGridState" className="mb-3" onBlur={handleDoctorNameChange}>
                                 <Form.Label>Choose your doctor</Form.Label>
                                 <Form.Select defaultValue="Choose...">
                                     <option>Prof. Dr. Pran Gopal Datta</option>
@@ -51,6 +78,17 @@ const BookAppointment = () => {
                                     <option>Dr. Melia Choudhury</option>
                                 </Form.Select>
                             </Form.Group>
+
+                            
+                            <Form.Group as={Col} controlId="formGridState" className="mb-3" onBlur ={handleVisitChange}>
+                                <Form.Label>Choose your doctor</Form.Label>
+                                <Form.Select defaultValue="Choose...">
+                                    <option>৳ 800</option>
+                                    <option>৳ 1000</option>
+                                    <option>৳ 1200</option>
+                                </Form.Select>
+                            </Form.Group>
+                           </Row>
 
                             <Form.Group className="mb-3" controlId="formGridAddress1">
                                 <Form.Label>Address</Form.Label>
@@ -73,14 +111,18 @@ const BookAppointment = () => {
                             </Row>
 
                             <Row className="mb-3">
-                                <Form.Group as={Col} controlId="formGridZip">
-                                    <Form.Label>Zip</Form.Label>
-                                    <Form.Control />
-                                </Form.Group>
+                            <Form.Group as={Col} controlId="formGridState" className="mb-3" onBlur ={handleTimeChange}>
+                                <Form.Label>Time</Form.Label>
+                                <Form.Select defaultValue="Choose...">
+                                    <option>10.00 am</option>
+                                    <option>3.00 pm</option>
+                                    <option>7.00 pm</option>
+                                </Form.Select>
+                            </Form.Group>
 
                                 <Form.Group as={Col} controlId="formGridPassword">
                                     <Form.Label>Date</Form.Label>
-                                    <Form.Control type="date" placeholder="" />
+                                    <Form.Control onBlur={handleDateChange} type="date" placeholder="" />
                                 </Form.Group>
                             </Row>
 
@@ -100,26 +142,27 @@ const BookAppointment = () => {
                             <tbody>
                             <tr>
                                 <td>Date</td>
-                                <td>20/10/2021</td>
+                                <td>{date}</td>
                             </tr>
                             <tr>
                                 <td>Time</td>
-                                <td>7.00pm</td>
+                                <td>{time}</td>
                             </tr>
                             <tr>
                                 <td>Doctor Name</td>
-                                <td>Prof. Dr. Pran Gopal Datta</td>
+                                <td>{doctorName}</td>
                             </tr>
                             <tr>
                                 <td>Visit</td>
-                                <td>৳ 1000</td>
+                                <td>{visit}</td>
                             </tr>
                             <tr style={{borderTop: '1px solid gray'}}>
                                 <th>Payable Total</th>
-                                <th>৳ 1000</th>
+                                <th>{visit}</th>
                             </tr>
                             </tbody>
                         </table>
+                        <Button className="mt-5 w-100">Confirm Now</Button>
                     </Col>
                 </Row>
             </Container>

@@ -7,7 +7,7 @@ const Banner = () => {
         <div className="banner-area">
             <Container>
                 <div className="text-area">
-                    <h1 className="fw-bold mb-3">Search Doctor & Make An Appointment</h1>
+                    <h1 className="fw-bold mb-3 title">Search Doctor & Make An Appointment</h1>
                     <h5>Discover The Best Doctors Nearest You</h5>
                     <div className="mt-4 d-flex justify-content-center input-area">
                     <Form.Select aria-label="Default select example">

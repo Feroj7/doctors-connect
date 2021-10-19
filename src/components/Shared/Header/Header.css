@@ -3,7 +3,12 @@
     color:white;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
+    .signup-btn{
+        margin-right:0 !important;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
     .logout-btn{
         width:80px;
         margin:auto;

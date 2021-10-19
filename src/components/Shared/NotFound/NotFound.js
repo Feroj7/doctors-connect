@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const NotFound = () => {
     return (
-        <div>
+        <div className="mt-5">
             <img className="img-fluid" src="https://image.freepik.com/free-vector/400-error-bad-request-concept-illustration_114360-1933.jpg" alt="" />
             <br />
             <Link to="/home">

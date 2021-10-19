@@ -32,7 +32,7 @@ const DoctorsDetail = () => {
                             <img className="img-fluid mb-3" src={matchedDoctor?.img} alt="" />
                             <h5>{matchedDoctor?.name}</h5>
                             <p className="text-primary">{matchedDoctor?.expertise}</p>
-                            <h4>৳ {matchedDoctor?.visit}</h4>
+                            <h4>{matchedDoctor?.visit}</h4>
                         </Col>
                         <Col lg={9}>
                             <h1>About <span className="text-primary">{matchedDoctor?.name}</span> </h1>
