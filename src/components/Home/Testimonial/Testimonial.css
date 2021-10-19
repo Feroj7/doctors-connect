@@ -1,12 +1,12 @@
+.testimonial img{
+    border-radius:50%;
+    padding-top:10px;
+}
 .testimonial-1{
     background-color: #0274FA;
     color:white;
     border-radius:20px;
     width:600px !important;
-}
-.testimonial img{
-    border-radius:50%;
-    padding-top:10px;
 }
 .testimonial-2{
     background-color: #36C777;
