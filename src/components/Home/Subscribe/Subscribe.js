@@ -1,6 +1,5 @@
 import React from 'react';
 import { Col, Container, Row, Button, InputGroup, FormControl } from 'react-bootstrap';
-import './Subscribe.css';
 
 const Subscribe = () => {
     return (
@@ -14,20 +13,17 @@ const Subscribe = () => {
                         </p>
                     </Col>
                     <Col lg={6}>
-                    <div className="mt-3 email-field">
-                    <InputGroup>
-                        <FormControl
-                            placeholder="Enter your email"
-                            aria-label="Enter your email"
-                            aria-describedby="basic-addon2"
-                            className="p-3"
-                        />
-                        <Button variant="primary" id="button-addon2">
-                        Subscribe Now
-                        </Button>
-                    </InputGroup>
-                        
-                    </div>
+                        <InputGroup className="pt-3">
+                            <FormControl
+                                placeholder="Enter your email"
+                                aria-label="Enter your email"
+                                aria-describedby="basic-addon2"
+                                className="p-3"
+                            />
+                            <Button variant="primary" id="button-addon2">
+                                Subscribe
+                            </Button>
+                        </InputGroup>
                     </Col>
                 </Row>
             </Container>
