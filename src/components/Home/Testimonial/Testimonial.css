@@ -26,8 +26,22 @@
     border-radius:20px;
     width:600px !important;
 }
+@media screen and (max-width: 360px) {
+    .testimonial-1{
+        width:200px !important;
+    }
+    .testimonial-2{
+        width:200px !important;
+    }
+    .testimonial-3{
+        width:200px !important;
+    }
+    .testimonial-4{
+        width:200px !important;
+    }
+}
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 361px) and (max-width: 800px) {
     .testimonial-1{
         width:250px !important;
     }
