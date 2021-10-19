@@ -49,7 +49,7 @@ const Testimonial = () => {
                 <hr />
             </div>
             <Container className="mt-5">
-                <Slider {...settings}>
+                <Slider {...settings} className="testimonial">
                     <div className="testimonial-1 p-2">
                         <img className="img-fluid m-auto" src="https://randomuser.me/api/portraits/women/32.jpg" alt="" />
                         <p className="mt-3">This is the best service in dhaka city.I am benefitted from this.</p>

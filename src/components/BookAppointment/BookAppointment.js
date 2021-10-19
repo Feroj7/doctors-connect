@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Container, Form, Row, Col, Button } from 'react-bootstrap';
-import './BookAppointment.css';
 
 const BookAppointment = () => {
 
